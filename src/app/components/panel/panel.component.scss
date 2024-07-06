@@ -1,19 +1,31 @@
+@import "../../../styles";
+
 $section-bg: #fff;
 $section-padding: 2em;
-$section-border-radius: 0.75rem;
+$border-radius: 0.75rem;
 $section-line-height: 1.6;
-$section-margin-bottom: 2rem;
+$section-margin-bottom: 1rem;
 $section-font-size: 0.875rem;
 $section-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$border-line-: 5px solid #bbb;
 
 section {
   background: $section-bg;
-  padding: $section-padding;
-  border-radius: $section-border-radius;
+  border: 1px solid #f4f4f4;
+  border-radius: $border-radius;
+  padding: $section-padding !important;
   line-height: $section-line-height;
-  overflow: hidden;
   margin-bottom: $section-margin-bottom;
-  position: relative;
   font-size: $section-font-size;
   box-shadow: $section-box-shadow;
 }
+
+hr.rounded {
+  border-top: $border-line-;
+  border-radius: $border-radius;
+}
+
+h2.header-color {
+  color: $system-font-color;
+}
+

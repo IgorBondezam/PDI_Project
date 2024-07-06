@@ -3,8 +3,7 @@ import {BrowserModule} from '@angular/platform-browser';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import { SearchComponentComponent } from './search-component/search-component.component';
-import { PanelComponent } from './components/panel/panel.component';
+import {SearchComponentComponent} from './search-component/search-component.component';
 
 @NgModule({
   declarations: [

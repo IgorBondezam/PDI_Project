@@ -1,6 +1,4 @@
-<p>vazio works!</p>
 <panel>
-  <div class="container">
     <form class="row">
       <input-label class="col-3"
                    [type]="'text'"
@@ -11,5 +9,18 @@
                    [labelValue]="'Senha'">
       </input-label>
     </form>
-  </div>
+  <panel class="col-12" [header]="'Teste painel dentro do painel'">
+    <input-label class="col-3"
+                 [type]="'password'"
+                 [labelValue]="'Senha'">
+    </input-label>
+    <input-label class="col-3"
+                 [type]="'password'"
+                 [labelValue]="'Senha'">
+    </input-label>
+    <input-label class="col-3"
+                 [type]="'password'"
+                 [labelValue]="'Senha'">
+    </input-label>
+  </panel>
 </panel>

@@ -1,3 +1,7 @@
-<section>
+<section class="container">
+  <div *ngIf="header">
+    <h2 class="header-color">{{ header }}</h2>
+    <hr class="rounded">
+  </div>
   <ng-content></ng-content>
 </section>

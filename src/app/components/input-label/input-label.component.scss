@@ -27,7 +27,8 @@ textarea {
   &:focus {
     outline: none;
   }
-  &:focus ~ label {
+  &:focus ~ label,
+  &:not(:placeholder-shown) ~ label{
     top: -14px;
     font-size: 12px;
     color: $hl-color;
