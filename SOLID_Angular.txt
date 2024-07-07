@@ -1,0 +1,33 @@
+https://www.youtube.com/watch?v=Y-MRJ9QYCvI&ab_channel=DecodedFrontend
+
+Design principal - is a recommendatons how to design your code, like a way in order to keep your code maintainable, flexible
+very abstract
+eg.: Design patterns - These are attempts to implement abstraction, implement the desgin principals
+
+--------------------------------------------------------------------------------------------------------------------------
+- Single responsibility principal - A class or a component should have one, and ONLY one, resason to change and to exist
+Do only one thing and do it well
+
+It's a little hard know when ends the responsibility for the class or component A and starts the responsibility for the class or component B
+
+You can use a rule(a HINT in true), the and-word. When you are explaning what your component do and you use the word AND, that's mean your component do more than one thing and has more than one responsibility
+
+You need to see the balance to use this principal, cause this code could be too hard to support. You find your balance during the code review, with your team, it's could be a variety from team to team
+
+--------------------------------------------------------------------------------------------------------------------------
+
+- Open Close Principal - Entities should be open for extension but cloed for modification
+
+set a way that you should extend it functionality without touching
+
+this component it is very good example libraries you can not modify any function, you just make the npm and can't modify de source code but still you have to be able to use that functionality
+
+With Angular you can 'extends' html or other components using no-content if you want
+
+--------------------------------------------------------------------------------------------------------------------------
+
+https://www.youtube.com/watch?v=G8zXugcYd7o&ab_channel=DecodedFrontend
+
+- Dependency inversion principle - High-level modules should not depend on low-level modules. Both should depend on abstraction
+
+In Angular project, every time when you use dependency injection you use this principal, inside in your contructor or not

@@ -8,5 +8,6 @@ import {Component, Input} from '@angular/core';
 export class PanelComponent {
 
   @Input() header: string;
+  @Input() class: string;
 
 }
