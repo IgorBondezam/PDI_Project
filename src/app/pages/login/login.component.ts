@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+  alertar(valor: string){
+    alert(valor);
+  }
+
 }
