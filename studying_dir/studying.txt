@@ -1,0 +1,20 @@
+--Video
+
+about eager and lazy loading - https://www.youtube.com/watch?v=MIB9DgFUVe4
+Implementing lazy loading and compare differences between eager and lazy - https://www.youtube.com/watch?v=7rOK74X-How
+new features about angular 17 - https://www.youtube.com/watch?v=MntMrlywYb8
+differences between standalone and not standalone - https://www.youtube.com/watch?v=rOYzrYLyy_4
+observable, subscribe, BehaviorSubject, subject and pipeAsync - https://www.youtube.com/watch?v=8ZKpJ5A5Ru4
+
+--Documentation
+
+    - Standalone
+To perform lazy loading for a component that is not standalone, it is necessary to pass the loadChildren in the routes file.
+With the change to standalone, it is necessary to pass the loadComponent and then declare it in the app.config (which is already created if the application is fully standalone), and then pass the provider provideRouter(routesFile).
+Standalone is nothing more than removing the need to have a module, turning the component itself into its own module, and then importing all its dependencies directly within it.
+
+    - Observable
+It is a pattern by Google made to be used instead of promises. Designed based on the observer design pattern, it is intended to interact whenever something is changed.
+It is notified that something has been altered by passing through a .next(changedValue), and thus, wherever this variable is used as a subscribe, it will be notified and execute the action defined in the subscribe.
+It may have the issue of executing without being requested (for instance, even after the component has been destroyed), since it holds the value of the subscribed function in memory.
+ One must be very careful to always remember to unsubscribe, using .complete, .pipe, or .unsubscribe.

@@ -9,9 +9,11 @@
       <input-label [type]="'password'"
                    [labelValue]="'Senha'">
       </input-label>
+    </div >
+    <div class="row justify-content-end">
+      <div>
+        <act-button [typeButton]="'button-positive'" [value]="'Click positive'" (clickAct)="alertar('Olá Igor')"></act-button>
+      </div>
     </div>
-    <act-button [typeButton]="'button-positive'" [value]="'Click positive'" (clickAct)="alertar('Olá Igor')"></act-button>
-    <act-button [typeButton]="'button-negative'" [value]="'Click negative'"></act-button>
-    <act-button [typeButton]="'button-neutral'" [value]="'Click neutral'"></act-button>
   </panel>
 </div>
